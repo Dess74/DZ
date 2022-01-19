@@ -1,0 +1,201 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+Зайти в свой аккаунт > нажать на + > выбрать «New repository»
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone “ссылка на репозиторий”
+ 6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+ 7. Добавить файл под гит.
+ 1,2 файла можно git add «имя файла», если файлов много git add . (git add new.json)
+ 8. За коммитить файл.
+Git commit -m “added new file”
+ 9. Отправить файл на внешний GitHub репозиторий.
+Git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+On github
+ 11. Отправить изменения на внешний репозиторий.
+Git add new.json
+Git commit -m “added information about Vasiliy”
+ 12. Создать файл preferences.json
+Touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+{
+  "Preferences": {
+    "Best_Film": "Matrix_1",
+    "Favourite_serial": "Super_Natural",
+    "eat": "Шашлык",
+    "Season": "summer",
+    "Country": "USA"
+  }
+} 
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+{
+  "Skills": [
+    "Theory_of_testing",
+    "Postman",
+    "Jmeter",
+    "Check_Lists",
+    "Bag_Reports",
+    "SQL",
+    "Charles",
+    "Mobile_Testing"
+  ]
+} 
+15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skills.json
+git commit -m "add two files to repository"
+git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+Add file > create new file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit “add bug report”
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+"Bug_report":
+  [
+    "Steps_to_reproduce",
+    "Actual_result",
+    "Expected_result",
+    "Attachment"
+  ]
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit “added bug report structure”
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+Git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+Зайти в свой аккаунт > нажать на + > выбрать «New repository»
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone “ссылка на репозиторий”
+ 23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+ 24. Добавить файл под гит.
+Git add .
+ 25. За коммитить файл.
+Git commit -m “commit”
+ 26. Отправить файл на внешний GitHub репозиторий.
+Git pull
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+	<lastname>Potapovich</lastname>
+	<firstname>Vasya</firstname>
+	<age></age>
+	<animals>
+		<pets>0</pets>
+	</animals>
+	<work>
+		<salery>500000</salery>
+	</work>
+</person>
+ 28. Отправить изменения на внешний репозиторий.
+Git add new.xml
+Git commit -m “correct data”
+Git pull
+ 29. Создать файл preferences.xml
+Touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+	<Best_film>Matrix_1</Best_film>
+	<Favourite_serial>Super_Natural</Favourite_serial>
+	<Eat>Шашлык</Eat>
+	<Season>Summer</Season>
+	<Country>USA</Country>
+</preferences>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+<?xml version="1.0" encoding="UTF-8"?>
+<Skills>
+	<S1>Theory_of_testing</S1>
+	<S2>Postman</S2>
+	<S3>Jmeter</S3>
+	<S4>Check_lists</S4>
+	<S5>Bug_Reports</S5>
+	<S6>SQL</S6>
+	<S7>Charles</S7>
+	<S8>Mobile_testing</S8>
+</Skills>
+ 32. Сделать коммит в одну строку.
+git add . && git commit -m "added new data" 
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Add file > create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit “add bug report”
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<Bug_report>
+	<S1>Steps_to_reproduce</S1>
+	<S2>Actual_result</S2>
+	<S3>Expected_result</S3>
+	<S4>Attachment</S4>
+</Bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit “Update bug_report.xml”
+ 38. Синхронизировать внешний и локальный репозиторий XML
+Git pull
+
+TXT
+1.	Создать внешний репозиторий c названием TXT.
+
+2.	Клонировать репозиторий TXT на локальный компьютер.
+Git clone
+3.	Внутри локального TXT создать файл “new.txt”.
+Touch new.txt
+4.	Добавить файл под гит.
+Git add new.txt
+5.	За коммитить файл.
+Git commit -m “added new txt file”
+6.	Отправить файл на внешний GitHub репозиторий.
+Git push
+7.	Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+Lastname - Potapovich
+Firstname - Vasya
+Patronymic - Arturovich
+Age - 32
+Pets - 0
+Future Salery - 500000
+8.	 Отправить изменения на внешний репозиторий.
+git add new.txt && git commit -m "updata file"
+git push
+9.	Создать файл preferences.txt
+Touch preferences.txt
+10.	В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT. 
+Preferences:
+1. Best Film - Matrix 1
+2. Favourite Serial - Super Natural
+3. Eat - Шашлык
+4. Season - Summer
+5. Country - USA
+
+11.	Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+Skills:
+1. Theory_of_testing
+2. Postman
+3. Jmeter
+4. Check Lists
+5. Bug Reports
+6. SQL
+7. Charles
+8. Mobile Testing
+12.	Сделать коммит в одну строку.
+git add . && git commit -m "add files preferences and skills"
+13.	Отправить сразу 2 файла на внешний репозиторий.
+Git push
+14.	На веб интерфейсе создать файл bug_report.txt.
+
+15.	Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Create bug_report.txt
+16.	На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Bug report:
+1. Steps to reproduce
+2. Actual result
+3.Expected result
+4. AttachmentСделать Commit changes (сохранить) изменения на веб интерфейсе.
+Create bug_report.txt
+17.	Синхронизировать внешний и локальный репозиторий TXT
+Git pull
