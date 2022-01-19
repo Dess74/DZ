@@ -51,13 +51,15 @@ Add file > create new file
 Commit “add bug report”
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
 {
-"Bug_report":
-  [
-    "Steps_to_reproduce",
-    "Actual_result",
-    "Expected_result",
-    "Attachment"
-  ]
+	"Bub_report":
+	{
+		"summary": "Не добавляется товар в корзину",
+		"Project": "web site",
+		"Component": "site shopping cart",
+		"Version": 1.001,
+		"Severity": "Blocker",
+		"Priority": "High"
+	}
 }
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 Commit “added bug report structure”
@@ -128,12 +130,14 @@ Add file > create new file
 Commit “add bug report”
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
 <?xml version="1.0" encoding="UTF-8"?>
-<Bug_report>
-	<S1>Steps_to_reproduce</S1>
-	<S2>Actual_result</S2>
-	<S3>Expected_result</S3>
-	<S4>Attachment</S4>
-</Bug_report>
+Bub_report>
+<summary>Не добавляется товар в корзину</summary>
+<Project>web site</Project>
+<Component>site shopping cart</Component>
+<Version>1.001</Version>
+<Severity>Blocker</Severity>
+<Priority>High</Priority>
+</Bub_report>
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 Commit “Update bug_report.xml”
  38. Синхронизировать внешний и локальный репозиторий XML
@@ -192,10 +196,13 @@ Git push
 Create bug_report.txt
 16.	На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
 Bug report:
-1. Steps to reproduce
-2. Actual result
-3.Expected result
-4. AttachmentСделать Commit changes (сохранить) изменения на веб интерфейсе.
+1. Summary: Не добавляется товар в корзину
+2. Project: web site
+3. Component: site shopping cart
+4. Version: 1.001
+5. Severity: Blocker
+6. Priority: High
+Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 Create bug_report.txt
 17.	Синхронизировать внешний и локальный репозиторий TXT
 Git pull
